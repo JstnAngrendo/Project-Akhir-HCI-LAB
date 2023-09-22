@@ -1,0 +1,372 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+body{
+    font-family: 'Inter', sans-serif;
+    overflow-x : hidden;
+}
+
+.background img{
+    position: absolute;
+    width: 100vw;
+    height: 60vw;
+}
+nav{
+    position: fixed;
+    display: flex;
+    background: #7D644C;
+    justify-content: space-around;
+    top: 0;
+    width: 100vw;
+    height: 98px;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo img{
+    position: absolute;
+    object-fit: cover;
+    left: 1.736vw;
+    top: 1.3vw;
+}
+
+nav ul{
+    display: flex; 
+    list-style: none;
+    width: 50%;
+    justify-content: space-between;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 2.083vw;
+}
+
+nav ul li a:hover{
+    color: #FFC700;
+}
+.active{
+    color:#FFC700;
+}
+.menu-toggle{
+    display: none;
+    flex-direction: column;
+    height: 25px;
+    justify-content: space-between;
+    left: 15vw;
+    position: relative;
+    /* z-index: 2; */
+}
+
+
+#click{
+    position: absolute;
+    width: 40px;
+    height: 35px;
+    opacity: 0;
+    /* left: -6px; */
+    right: 7.5vw;
+    /* top: -3px; */
+    cursor: pointer;
+    z-index: 3;
+}
+.menu-toggle span{
+    z-index: 2;
+    display: block;
+    width: 33.6px;
+    height: 4px;
+    background-color: white;
+    border-radius: 3px;
+}
+
+.content{
+    display: inline-block;
+    position: absolute;
+}
+
+#judul{
+    position: absolute;
+    width: 100vw;
+    left: 0;
+    top: 13vw;
+
+    font-family: 'Sansita';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3vw;
+    
+    text-align: center;
+
+    color: #000000;
+}
+
+#logohitam{
+    position: absolute;
+    width: 33vw;
+    height: 13vw;
+    left: 9vw;
+    top: 20vw;
+
+}
+
+#perkenalan{
+    position: absolute;
+    width: 35vw;
+    left: 5vw;
+    top: 33vw;
+    
+    font-family: 'Sen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5vw;
+    text-align: justify;
+    
+    color: #000000;
+}
+
+#pic1{
+    position: absolute;
+    width: 21vw;
+    left: 46vw;
+    top: 19vw;
+    border-radius: 15px;
+}
+
+#pic2 { 
+    position: absolute;
+    width: 21vw;
+    left: 70.5vw;
+    top: 19vw;
+    border-radius: 15px;
+}
+
+#pic3{
+    position: absolute;
+    width: 21vw;
+    left: 46vw;
+    top: 37vw;    
+    border-radius: 15px;
+}
+
+#pic4{
+    position: absolute;
+    width: 21vw;
+    left: 70.5vw;
+    top: 37vw;
+    border-radius: 15px;  
+}
+
+.footer{
+    position: absolute;
+    width: 100vw;
+    height: 9vw;
+    background-color:#7D644C;
+    top: 60vw;
+}
+/* .footerImg{
+    position: absolute;
+    width: 100vw;
+    height: 8.621vw;
+    background-color:#7D644C;
+    top: 100vw;
+} */
+
+.copyright{
+    position: absolute;
+    width: 100vw;
+    left: 0;
+    top: 0vw;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5vw;
+    text-align: center;
+    line-height: 9vw;
+    color: #FFFFFF;
+}
+
+.whatsapp{
+    position: absolute;
+    left: 0.1vw;
+    bottom: 0.1vw;
+    width: 2.083vw;
+    height: 1.990vw;
+}
+.phoneNumber{
+    position: absolute;
+    left: 3vw;
+    bottom: 0.3vw;
+    font-weight: 400;
+    font-size: 1.3vw;
+    color: white;
+}
+
+.email{
+    position: absolute;
+    left: 15vw;
+    bottom: 0; 
+    width: 2.083vw;
+    height: 1.990vw;
+}
+.emailText{
+    position: absolute;
+    left: 18vw;
+    bottom: 0.3vw;
+    font-weight: 400;
+    font-size: 1.3vw;
+    color: white;
+}
+
+.instagram{
+    position: absolute;
+    width: 2.083vw;
+    height: 1.990vw;
+    right: 10vw;
+    bottom: 0; 
+}
+
+.facebook{
+    position: absolute;
+    width: 2.083vw;
+    height: 1.990vw;
+    right: 6vw;
+    bottom: 0; 
+}
+.twitter{
+    position: absolute;
+    width: 2.083vw;
+    height: 1.990vw;
+    right: 2vw;
+    bottom: 0; 
+}
+
+
+
+@media screen and (max-width: 900px){
+    nav ul{
+        width: 50%;
+        /* font-size: 14px; */
+        font-size: 1.556vw;
+    }
+}
+
+/* ukuran mobile */
+
+@media screen and (max-width: 720px){
+    .menu-toggle{
+        display: flex;
+    }
+    nav ul{
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;
+        flex-direction: column;
+        height: 100vh;
+        align-items: center;
+        justify-content:space-evenly;
+        z-index: -2;
+        right: -100%;
+        background-color: #7D644C;
+    }
+    /* #check:checked ~ ul{
+        left: 0%;
+    } */
+    nav ul li{
+        display: block;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover,a.active{
+        background: none;
+        color: #FFC700;
+    }
+
+
+    #click:checked ~ ul{
+        right: 0%;
+    }
+
+    
+}
+
+
+
+@media screen and (max-width: 900px)
+{
+    #judul{
+        font-weight: 400;
+        font-size: 5vw;
+    }
+    #logohitam{
+        left: 40vw;
+        top: 23vw;
+    }
+    #perkenalan{
+        left: 20vw;
+        top: 38vw;
+        width: 60vw;
+        font-weight: 400;
+        font-size: 2.5vw;
+    }
+    #pic1{
+        width: 28vw;
+        height: 21vw;
+        left: 19vw;
+        top: 65vw;
+    }
+    #pic2{
+        width: 28vw;
+        height: 21vw;
+        left: 54vw;
+        top: 65vw;
+    }
+    #pic3{
+        width: 28vw;
+        height: 21vw;
+        left: 19vw;
+        top: 92vw;
+    }
+    #pic4{
+        width: 28vw;
+        height: 21vw;
+        left: 54vw;
+        top: 92vw;
+    }
+    .background img{
+        height: 135vw;
+    }
+    .footer{
+        top: 130vw;
+    }
+    .content{
+        top: 12vw;
+    }
+}
+
+@media screen and (max-width: 520px)
+{
+    .background img{
+        height: 200vw;
+    }
+    .footer{
+        top: 200vw;
+    }
+    .content{
+        top: 25vw;
+    }
+    #perkenalan{
+        font-size: 4vw;
+    }
+    #pic1, #pic2{
+        top: 110vw;
+    }
+    #pic3, #pic4{
+        top: 140vw;
+    }
+    
+}

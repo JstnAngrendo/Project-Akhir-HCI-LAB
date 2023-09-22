@@ -1,0 +1,724 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+body{
+    font-family: 'Inter', sans-serif;
+    overflow-x : hidden;
+}
+
+.background img{
+    position: absolute;
+    width: 100vw;
+    height: 75vw;
+}
+nav{
+    position: fixed;
+    display: flex;
+    background: #7D644C;
+    justify-content: space-around;
+    top: 0;
+    width: 100vw;
+    height: 98px;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo img{
+    position: absolute;
+    object-fit: cover;
+    left: 1.736vw;
+    top: 1.3vw;
+}
+
+nav ul{
+    display: flex; 
+    list-style: none;
+    width: 50%;
+    justify-content: space-between;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 2.083vw;
+}
+
+nav ul li a:hover{
+    color: #FFC700;
+}
+.active{
+    color:#FFC700;
+}
+.menu-toggle{
+    display: none;
+    flex-direction: column;
+    height: 25px;
+    justify-content: space-between;
+    left: 15vw;
+    position: relative;
+    /* z-index: 2; */
+}
+
+
+#click{
+    position: absolute;
+    width: 40px;
+    height: 35px;
+    opacity: 0;
+    /* left: -6px; */
+    right: 7.5vw;
+    /* top: -3px; */
+    cursor: pointer;
+    z-index: 3;
+}
+.menu-toggle span{
+    z-index: 2;
+    display: block;
+    width: 33.6px;
+    height: 4px;
+    background-color: white;
+    border-radius: 3px;
+}
+
+
+.content{
+    display: inline-block;
+    position: absolute;
+}
+
+#judul{
+    position: absolute;
+    width: 100vw;
+    left: 0;
+    top: 13vw;
+
+    font-family: 'Sansita';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3vw;
+    
+    text-align: center;
+
+    color: #000000;
+}
+
+#Biglogo{
+    position: absolute;
+    width: 33vw;
+    height: 13vw;
+    left: 9vw;
+    top: 20vw;
+}
+
+#addressTitle{
+    position: absolute;
+    width: max-content;
+    left: 38vw;
+    top: 23vw;
+
+    font-family: 'Sen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2vw;
+    color: #000000;
+}
+
+#address{
+    position: absolute;
+    width: 30vw;
+
+    left: 38vw;
+    top: 26vw;
+    
+    font-family: 'Sen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5vw;
+    
+    color: #000000;
+}
+
+#workingHoursTitle{
+    position: absolute;
+    width: max-content;
+    left: 72vw;
+    top: 23vw;
+
+    font-family: 'Sen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2vw;
+
+    color: #000000;
+}
+
+#workingHoursday{
+    position: absolute;
+    width: 18vw;
+    left: 72vw;
+    top: 26vw;
+
+    font-family: 'Sen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5vw;
+
+    color: #000000;
+}
+
+#workingHourstime{
+    position: absolute;
+    width: 18vw;
+    left: 83vw;
+    top: 26vw;
+
+    font-family: 'Sen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5vw;
+
+    color: #000000;
+}
+
+#officialAccount{
+    position: absolute;
+    width: 100vw;
+    left: 0;
+    top: 50vw;
+
+    font-family: 'Sansita';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3vw;
+    
+    text-align: center;
+
+    color: #000000;
+}
+
+#contactUsTitle{
+    position: absolute;
+    width: max-content;
+    left: 16vw;
+    top: 58vw;
+
+    font-family: 'Sen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2vw;
+
+    color: #000000;
+}
+
+#contactUsapp{
+    position: absolute;
+    width: max-content;
+    left: 10vw;
+    top: 62vw;
+
+    font-family: 'Sen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5vw;
+
+    color: #000000;
+}
+
+#contactUsaccount{
+    position: absolute;
+    width: max-content;
+    left: 20vw;
+    top: 62vw;
+
+    font-family: 'Sen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5vw;
+
+    color: #000000;
+}
+
+#socialMediaTitle{
+    position: absolute;
+    width: max-content;
+    left: 70vw;
+    top: 58vw;
+
+    font-family: 'Sen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2vw;
+
+    color: #000000;
+}
+
+#socialMedia1{
+    position: absolute;
+    width: max-content;
+    left: 67vw;
+    top: 62vw;
+
+    font-family: 'Sen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5vw;
+
+    color: #000000;
+}
+
+#socialMedia2{
+    position: absolute;
+    width: max-content;
+    left: 78vw;
+    top: 62vw;
+
+    font-family: 'Sen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5vw;
+
+    color: #000000;
+}
+
+#instaMedia{
+    position: absolute;
+    width: 2vw;
+    height: 2vw;
+    left: 93vw;
+    top: 61.6vw;
+}
+
+#faceMedia{
+    position: absolute;
+    width: 2vw;
+    height: 2vw;
+    left: 87.5vw;
+    top: 63.6vw;
+}
+
+#twitMedia{
+    position: absolute;
+    width: 2vw;
+    height: 2vw;
+    left: 87.5vw;
+    top: 65.5vw;
+}
+
+.footer{
+    position: absolute;
+    width: 100vw;
+    height: 9vw;
+    background-color:#7D644C;
+    top: 75vw;
+}
+/* .footerImg{
+    position: absolute;
+    width: 100vw;
+    height: 8.621vw;
+    background-color:#7D644C;
+    top: 100vw;
+} */
+
+.copyright{
+    position: absolute;
+    width: 100vw;
+    left: 0;
+    top: 0vw;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5vw;
+    text-align: center;
+    line-height: 9vw;
+    color: #FFFFFF;
+}
+
+.whatsapp{
+    position: absolute;
+    left: 0.1vw;
+    bottom: 0.1vw;
+    width: 2.083vw;
+    height: 1.990vw;
+}
+.phoneNumber{
+    position: absolute;
+    left: 3vw;
+    bottom: 0.3vw;
+    font-weight: 400;
+    font-size: 1.3vw;
+    color: white;
+}
+
+.email{
+    position: absolute;
+    left: 15vw;
+    bottom: 0; 
+    width: 2.083vw;
+    height: 1.990vw;
+}
+.emailText{
+    position: absolute;
+    left: 18vw;
+    bottom: 0.3vw;
+    font-weight: 400;
+    font-size: 1.3vw;
+    color: white;
+}
+
+.instagram{
+    position: absolute;
+    width: 2.083vw;
+    height: 1.990vw;
+    right: 10vw;
+    bottom: 0; 
+}
+
+.facebook{
+    position: absolute;
+    width: 2.083vw;
+    height: 1.990vw;
+    right: 6vw;
+    bottom: 0; 
+}
+.twitter{
+    position: absolute;
+    width: 2.083vw;
+    height: 1.990vw;
+    right: 2vw;
+    bottom: 0; 
+}
+
+@media screen and (max-width: 1400px)
+{
+    .content{
+        top: 20vw;
+    }
+    .background img{
+        height: 155vw;
+    }
+    .footer{
+        top: 155vw;
+    }
+    #addressTitle{
+        font-size: 2vw;
+    }
+    
+    #address{
+
+        font-size: 2vw;
+    }
+    
+    #workingHoursTitle{
+        
+        font-size: 2vw;
+    }
+    
+    #workingHoursday{
+       
+        font-size: 2vw;
+    }
+    
+    #workingHourstime{
+        
+        font-size: 2vw;
+    }
+
+    #contactUsTitle{ 
+        left: 45vw;
+        font-size: 2vw;
+    }
+    
+    #contactUsapp{
+        left: 38vw;
+        font-size: 2vw;
+   
+    }
+    
+    #contactUsaccount{
+        left: 52vw;
+        font-size: 2vw;
+
+    }
+    #socialMediaTitle{
+        left: 45vw;
+        top: 85vw;
+        font-size: 2vw;
+    }
+    #socialMedia1{
+        left: 38vw;
+        top: 90vw;
+        font-size: 2vw;
+  
+    }
+    #socialMedia2{
+        top: 90vw;
+        left: 52vw;
+        font-size: 2vw;
+
+    }
+    #instaMedia{
+        left: 72vw;
+        top: 90vw;
+    }
+    #faceMedia{
+        left: 65vw;
+        top: 92.5vw;
+    }
+    #twitMedia{
+        left: 65vw;
+        top: 95vw;
+    }
+}
+
+@media screen and (max-width: 900px){
+    nav ul{
+        width: 50%;
+        /* font-size: 14px; */
+        font-size: 1.556vw;
+    }
+}
+
+/* ukuran mobile */
+
+@media screen and (max-width: 720px){
+    .menu-toggle{
+        display: flex;
+    }
+    nav ul{
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;
+        flex-direction: column;
+        height: 100vh;
+        align-items: center;
+        justify-content:space-evenly;
+        z-index: -2;
+        right: -100%;
+        background-color: #7D644C;
+    }
+    /* #check:checked ~ ul{
+        left: 0%;
+    } */
+    nav ul li{
+        display: block;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover,a.active{
+        background: none;
+        color: #FFC700;
+    }
+
+
+    #click:checked ~ ul{
+        right: 0%;
+    }
+
+    
+}
+
+@media screen and (max-width: 900px)
+{
+    #judul, #officialAccount{
+        font-size: 4vw;
+    }
+    #Biglogo{
+        width: 38vw;
+        height: 18vw;
+    }
+    #addressTitle, #workingHoursTitle, #contactUsTitle, #socialMediaTitle{
+        font-size: 2.8vw;
+    }
+    #address, #workingHoursday, #workingHourstime, #contactUsapp, #contactUsaccount, #socialMedia1 , #socialMedia2{
+        font-size: 2vw;
+    }
+    #socialMedia2{
+        left: 76vw;
+    }
+    #instaMedia{
+        width: 3vw;
+        height: 3vw;
+        left: 96vw;
+        top: 61.6vw;
+    }
+    #faceMedia{
+        width: 3vw;
+        height: 3vw;
+        left: 90.5vw;
+        top: 64.3vw;
+    }
+    #twitMedia{
+        width: 3vw;
+        height: 3vw;
+        left: 95vw;
+        top: 66.5vw;
+    }
+    
+}
+
+@media screen and (max-width:900px)
+{
+    #contactUsTitle{ 
+        left: 45vw;
+        top: 60vw;
+        font-size: 4vw;
+    }
+    
+    #contactUsapp{
+        left: 30vw;
+        font-size: 3vw;
+        top: 68vw;
+    }
+    
+    #contactUsaccount{
+        left: 50vw;
+        font-size: 3vw;
+        top: 68vw;
+    }
+    #socialMediaTitle{
+        left: 41vw;
+        top: 86vw;
+        font-size: 4vw;
+    }
+    #socialMedia1{
+        font-size: 3vw;
+        left: 30vw;
+        top: 95vw;
+    }
+    #socialMedia2{
+        font-size: 3vw;
+        left: 50vw;
+        top: 95vw;
+    }
+    #instaMedia{
+        left: 82vw;
+        top: 95vw;
+    }
+    #faceMedia{
+        left: 72vw;
+        top: 98.5vw;
+    }
+    #twitMedia{
+        left: 72vw;
+        top: 102vw;
+    }
+    .footer{
+        top: 140vw;
+    }
+    .background img{
+        height: 140vw;
+    }
+    .content{
+        top: 15vw;
+    }
+}
+
+
+
+@media screen and (max-width:500px)
+{
+    .background img{
+        height: 220vw;
+    }
+    .footer{
+        top: 220vw;
+    }
+    .content{
+        top: 30vw;
+    }
+    #judul{
+        font-size: 5vw;
+    }
+    #Biglogo{
+        left: 9vw;
+        top: 20vw;
+    }
+    
+    #addressTitle{
+        left: 42vw;
+        top: 23vw;
+        font-size: 4vw;
+     
+    }
+    
+    #address{
+        width: 60vw;
+        left: 42vw;
+        top: 27vw;
+        font-size: 3.5vw;
+    }
+    
+    #workingHoursTitle{
+        left: 38vw;
+        top: 49vw;
+        font-size: 4vw;
+    }
+    
+    #workingHoursday{
+        left: 32vw;
+        top: 55vw;
+        font-size: 3.5vw;
+    }
+    
+    #workingHourstime{
+        left: 56vw;
+        top: 55vw;
+        font-size: 3.5vw;
+    }
+
+    #contactUsTitle{ 
+        left: 42vw;
+        top: 103vw;
+        font-size: 4.5vw;
+    }
+    
+    #contactUsapp{
+        left: 30vw;
+        font-size: 3.5vw;
+        top: 110vw;
+    }
+    
+    #contactUsaccount{
+        left: 50vw;
+        font-size: 3.5vw;
+        top: 110vw;
+    }
+    #socialMediaTitle{
+        left: 40vw;
+        top: 138vw;
+        font-size: 4vw;
+    }
+    #socialMedia1{
+        font-size: 3.5vw;
+        left: 30vw;
+        top: 145vw;
+    }
+    #socialMedia2{
+        font-size: 3.5vw;
+        left: 50vw;
+        top: 145vw;
+    }
+    #instaMedia{
+        left: 85vw;
+        top: 145vw;
+    }
+    #faceMedia{
+        left: 73vw;
+        top: 149vw;
+    }
+    #twitMedia{
+        left: 73vw;
+        top: 153vw;
+    }
+    #officialAccount{
+        top: 93vw;
+        font-size: 5vw;
+        
+    }
+    
+}

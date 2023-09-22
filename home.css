@@ -1,0 +1,647 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+body{
+    font-family: 'Inter', sans-serif;
+    overflow-x : hidden;
+}
+
+.background img{
+    position: absolute;
+    width: 100vw;
+    height: 120.694vw;
+    object-fit: cover;
+}
+nav{
+    position: fixed;
+    display: flex;
+    background: #7D644C;
+    justify-content: space-around;
+    top: 0;
+    width: 100vw;
+    height: 98px;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo img{
+    position: absolute;
+    object-fit: cover;
+    left: 1.736vw;
+    top: 1.3vw;
+}
+
+nav ul{
+    display: flex; 
+    list-style: none;
+    width: 50%;
+    justify-content: space-between;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 2.083vw;
+}
+
+nav ul li a:hover{
+    color: #FFC700;
+}
+.active{
+    color: #FFC700;
+}
+.menu-toggle{
+    display: none;
+    flex-direction: column;
+    height: 25px;
+    justify-content: space-between;
+    left: 15vw;
+    position: relative;
+    /* z-index: 2; */
+}
+
+
+#click{
+    position: absolute;
+    width: 40px;
+    height: 35px;
+    opacity: 0;
+    /* left: -6px; */
+    right: 7.5vw;
+    /* top: -3px; */
+    cursor: pointer;
+    z-index: 3;
+}
+.menu-toggle span{
+    z-index: 2;
+    display: block;
+    width: 33.6px;
+    height: 4px;
+    background-color: white;
+    border-radius: 3px;
+}
+
+/* discount */
+
+.discount{
+    position: absolute;
+}
+.discount img{
+    position: absolute;
+    width: 88.472vw;
+    height: 32.292vw;
+    left: 6.944vw;
+    top: 9.861vw;
+}
+
+
+/* Categories */
+.categories{
+    position: relative;
+    display: flex;
+}
+.categories h2{
+    position: absolute;
+    width: 100vw;
+    left:0;
+    top: 45.417vw;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.125vw;
+
+    text-align: center;
+
+    color: #000000;
+}
+
+.categoriesImg{
+    position: absolute;
+    width: 88.472vw;
+    height: 13.681vw;
+    left: 6.250vw;
+    top: 51.597vw;
+    background: rgba(255, 251, 218, 0.5);
+    border: 1px solid #000000;
+    border-radius: 1.389vw;
+
+}
+
+.guitar{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 88.472vw;
+    height: auto;
+    left: 6.250vw;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+    top: 52.5vw;
+}   
+
+.gitar{
+    width: 10.694vw;
+    height: 10.694vw;
+    border: 1px solid #000000;
+    border-radius: 1.389vw;
+}
+
+
+.guitarText{
+    position: absolute;
+}
+
+.gitarText1{
+    position: absolute;
+    width: 100vw;
+    font-weight: 400;
+    font-size: 1.389vw;
+    /* text-align: left; */
+    /* margin-right: 0vw; */
+    left: 10.15vw;
+    top: 63.5vw;
+}
+.gitarText2{
+    position: absolute;
+    width: 100vw;
+    font-weight: 400;
+    font-size: 1.389vw;
+    /* text-align: left; */
+    /* margin-right: 0vw; */
+    left: 28.15vw;
+    top: 63.5vw;
+}
+.gitarText3{
+    position: absolute;
+    width: 100vw;
+    font-weight: 400;
+    font-size: 1.389vw;
+    /* text-align: left; */
+    /* margin-right: 0vw; */
+    left: 46.5vw;
+    top: 63.5vw;
+}
+.gitarText4{
+    position: absolute;
+    width: 100vw;
+    font-weight: 400;
+    font-size: 1.389vw;
+    /* text-align: left; */
+    /* margin-right: 0vw; */
+    left: 65.5vw;
+    top: 63.5vw;
+}
+.gitarText5{
+    position: absolute;
+    width: 100vw;
+    font-weight: 400;
+    font-size: 1.389vw;
+    /* text-align: left; */
+    /* margin-right: 0vw; */
+    left: 83.5vw;
+    top: 63.5vw;
+}
+
+
+/* Hot Deals */
+
+.hotdeals{
+    position: absolute;
+}
+.hotdeals h2{
+    position: absolute;
+    width: 100vw;
+    left:0;
+    top: 67.222vw;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.125vw;
+    text-align: center;
+
+    color: #000000;
+}
+
+.hotdeals-box{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 88.472vw;
+    height: auto;
+    left: 6.250vw;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+    top: 72.639vw;
+}
+
+.box{
+    width: 25.694vw;
+    height: 15.833vw;
+    background: rgba(255, 251, 218, 0.5);
+    border: 1px solid #000000;
+    border-radius: 1.389vw;
+}
+
+.hotdeals-guitar{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 88.472vw;
+    height: auto;
+    left: -3vw;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+    top: 74.639vw;
+}
+
+.box-guitar{
+    width: auto;
+    height: 11.181vw;
+}
+
+.hotdeals-logo{
+    justify-content: space-between;
+    position: absolute;
+    width: 90vw;
+    height: auto;
+    left: 10vw;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+    top: 84vw;
+}
+
+.box-logo{
+    width: auto;
+    height: 5.347vw;
+    margin-right: 19vw;
+}
+
+.hotdeals-descp{
+    position: absolute;
+}
+
+.box-description{
+    position: absolute;
+    top: 74vw;
+    left: 15vw;
+    font-size: 1.042vw;
+    width: 17.917vw;
+    height: 9.653vw;
+    margin-right: 10vw;
+}
+.box-description2{
+    position: absolute;
+    top: 74vw;
+    left: 45vw;
+    font-size: 1.042vw;
+    width: 17.917vw;
+    height: 9.653vw;
+    margin-right: 10vw;
+}
+
+.box-description3{
+    position: absolute;
+    font-size: 1.042vw;
+    left: 75vw;
+    width: 17.917vw;
+    height: 9.653vw;
+    margin-right: 10vw;
+    top: 74vw;
+}
+
+
+/* BRANDS */
+
+.brandsMenu{
+    position: absolute;
+}
+
+.brandsBg{
+    position: absolute;
+    width: 90.625vw;
+    height: 20.903vw;
+    top: 96.528vw;
+    left:4.722vw;
+    margin-left: 0;
+    background: rgba(255, 251, 218, 0.5);
+    border: 1px solid #000000;
+    border-radius: 1.389vw;
+}
+
+.brandsMenu h2{
+    position: absolute;
+    width: 100vw;
+    left:0;
+    top: 90.694vw;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.125vw;
+
+    text-align: center;
+
+    color: #000000;
+}
+.brands{
+    position: absolute;
+    width: 100vw;
+    height: auto;
+    left: 10vw;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+    top: 99vw;
+}
+.brands-logo{
+    width: 10.694vw;
+    height: 10.694vw;
+    margin-right: 11.5vw;
+
+    border-radius: 1.389vw;
+}
+
+.brandsText{
+    position: absolute;
+    display: flex;
+    width: 90vw;
+    height: auto;
+    left: 3.8vw;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+    top: 110vw;
+
+}
+
+.brands-name{
+    width: auto;
+    height: 1.667vw;
+    font-weight: 400;
+    font-size: 1.389vw;
+    color: black;
+    text-align: center;
+    margin-right: 0vw;
+}
+
+
+
+
+
+/* FOOTER */
+.footer{
+    position: absolute;
+    width: 100vw;
+    height: 9vw;
+    background-color:#7D644C;
+    top:120.694vw;
+}
+/* .footerImg{
+    position: absolute;
+    width: 100vw;
+    height: 8.621vw;
+    background-color:#7D644C;
+    top: 100vw;
+} */
+
+.copyright{
+    position: absolute;
+    width: 100vw;
+    left: 0;
+    top: 0vw;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5vw;
+    text-align: center;
+    line-height: 9vw;
+    color: #FFFFFF;
+}
+
+.whatsapp{
+    position: absolute;
+    left: 0.1vw;
+    bottom: 0.1vw;
+    width: 2.083vw;
+    height: 1.990vw;
+}
+.phoneNumber{
+    position: absolute;
+    left: 3vw;
+    bottom: 0.3vw;
+    font-weight: 400;
+    font-size: 1.3vw;
+    color: white;
+}
+
+.email{
+    position: absolute;
+    left: 15vw;
+    bottom: 0; 
+    width: 2.083vw;
+    height: 1.990vw;
+}
+.emailText{
+    position: absolute;
+    left: 18vw;
+    bottom: 0.3vw;
+    font-weight: 400;
+    font-size: 1.3vw;
+    color: white;
+}
+
+.instagram{
+    position: absolute;
+    width: 2.083vw;
+    height: 1.990vw;
+    right: 10vw;
+    bottom: 0; 
+}
+
+.facebook{
+    position: absolute;
+    width: 2.083vw;
+    height: 1.990vw;
+    right: 6vw;
+    bottom: 0; 
+}
+.twitter{
+    position: absolute;
+    width: 2.083vw;
+    height: 1.990vw;
+    right: 2vw;
+    bottom: 0; 
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 900px){
+    nav ul{
+        width: 50%;
+        /* font-size: 14px; */
+        font-size: 1.556vw;
+    }
+}
+
+/* ukuran mobile */
+
+@media screen and (max-width: 720px){
+    .menu-toggle{
+        display: flex;
+    }
+    nav ul{
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;
+        flex-direction: column;
+        height: 100vh;
+        align-items: center;
+        justify-content:space-evenly;
+        z-index: -2;
+        right: -100%;
+        background-color: #7D644C;
+    }
+    /* #check:checked ~ ul{
+        left: 0%;
+    } */
+    nav ul li{
+        display: block;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover,a.active{
+        background: none;
+        color: #FFC700;
+    }
+
+    #click:checked ~ ul{
+        right: 0%;
+    }
+
+    .background img{
+        height: 140vw;
+    }
+    .discount img{
+        top: 24.861vw;
+    }
+
+    .categories{
+        top: 15vw;
+    }
+    .hotdeals{
+        top: 15vw;
+    }
+    .brandsMenu{
+        top: 15vw;
+    }
+    .footer{
+        top: 140vw;
+    }
+}
+@media screen and (max-width: 500px){
+    .discount img{
+        left: 0;
+        width: 100vw;
+        height: 40vw;
+    }
+    .categories{
+        top: 30vw;
+    }
+
+    .categories h2{
+        font-size: 5vw;
+    }
+
+    .categoriesImg{
+        height: 23vw;
+    }
+    .guitar{
+        top: 54vw;
+    }
+    .gitar{
+        width: 15vw;
+        height: 15vw;
+       
+    }
+    .gitarText1{
+        top: 69vw;
+        left: 8vw;
+        font-size: 2vw;
+    }
+    .gitarText2{
+        top: 69vw;
+        left: 26vw;
+        font-size: 2vw;
+    }
+    .gitarText3{
+        top: 69vw;
+        left: 45vw;
+        font-size: 2vw;
+    }
+    .gitarText4{
+        top: 69vw;
+        left: 65vw;
+        font-size: 2vw;
+    }
+    .gitarText5{
+        top: 69vw;
+        left: 83vw;
+        font-size: 2vw;
+    }
+    .hotdeals{
+        top: 45vw;
+    }
+    .hotdeals h2{
+        font-size: 5vw;
+    }
+    
+    .hotdeals-box{
+        top: 75vw;
+    }
+    .hotdeals-descp{
+        top: 3vw;
+    }
+    .hotdeals-guitar{
+        top:77vw;
+    }
+    .hotdeals-logo{
+        top:86.4vw;
+    }
+    .brandsMenu{
+        top:60vw;
+    }
+    .brandsMenu h2{
+        font-size: 5vw;
+    }
+    .brandsBg{
+        top:100vw;
+    }
+    .brands{
+        top:105vw;
+    }
+    .brandsText{
+        top: 117vw;
+    }
+    .brands-name{
+        font-size: 2vw;
+    }
+
+    .background img{
+        height: 215vw;
+    }
+    .footer{
+        top:215vw;
+    }
+}
+
+    

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanaka Guitar</title>
+    <link rel="stylesheet" href="member.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="background">
+        <img src="/Assets/Background.png" alt="">
+    </div>
+    <nav>
+        <input id = "click" type="checkbox">
+        <div class="logo">
+            <a href=""><img src="/Assets/Logo.png" alt=""></a>
+        </div>
+      
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="Gallery.html">Gallery</a></li>
+            <li><a class="active" href="member.html">Member</a></li>
+            <li><a href="AboutUs.html">About Us</a></li>
+            <li><a href="ContactUs.html">Contact Us</a></li>
+        </ul>
+        <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <div class="content">
+        <div class ="white-block"></div>
+        <h1>CREATE MEMBERSHIP</h1>
+        
+        <form name = "memberForm" action="congrats.html" onsubmit="return checkForm()">
+            <div class="firstname">
+                <p >First Name</p>
+                <input id = "fname" type="text" name="fname" >
+                <div id="errorFname"></div>
+            </div>
+            <div class="lastname">
+                <p>Last Name</p>
+                <input type="text" name="Lname" id = "Lname">
+                <div id="errorLname"></div>
+            </div>
+            <div class="date">
+                <p>Date of Birth</p>
+                <input type="date" name="dot" id="dot">
+                <div id="errorDate"></div>
+            </div>
+            <div class="gender">
+                <p>Gender</p>
+                <input type="radio" name="gender" id="gendermale" value="Male">
+                <label id = "label1"for="gendermale">Male</label>
+                <input type="radio" name="gender" id="genderfemale" value="Female">
+                <label id = "label2"for="genderfemale">Female</label>
+                <div id="errorGender"></div>
+            </div>
+            <div class="Email">
+                <p>Email</p>
+                <input type="email" name="emails" id="emails">
+                <div id="errorEmail"></div>
+            </div>
+            <div class="password">
+                <p>Password</p>
+                <input type="password" name="pass" id="pass">
+                <label id = "pass1"for="pass">Create Password</label>
+                <input type="password" name="passvalidate" id="passvalidate">
+                <label id = "pass2"for="passvalidate">Confirm Password</label>
+                <div id="errorPass"></div>
+            </div>
+            <div class="number">
+                <p>Phone Number</p>
+                <input type="tel" name="phone" id="phone" >
+                <div id="errorPhone"></div>
+            </div>
+            <div class="Address">
+                <p>Address</p>
+                <textarea name="address" id="address" cols="30" rows="10"></textarea>
+                <div id="errorAddress"></div>
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" name="checkbox1" id="checkbox1">
+                <label id = "check1"for="checkbox1">Get Daily Letters</label>
+                <input type="checkbox" name="checkbox2" id="checkbox2">
+                <label id = "check2"for="checkbox2">Agree to terms and conditions</label>
+                <div id="errorCheck"></div>
+            </div>
+            
+            <button id = "submit" type="submit">Submit</button>
+        </form>
+    </div>
+
+        
+
+
+    
+    <div class="footer">
+        <p class="copyright">Copyright © 2022 Tanaka guitars. All right reserved. Products and specifications are subject to change without notice</p>
+        <img class="whatsapp"src="/Assets/akar-icons_whatsapp-fill.png" alt="">
+        <p class="phoneNumber">0812 1222 8309</p>
+        <img class="email"src="/Assets/dashicons_email-alt.png" alt="">
+        <p class="emailText">TanakaGuitar@gmail.com</p>
+        <img class="instagram"src="/Assets/akar-icons_instagram-fill.png" alt="">
+        <img class="facebook"src="/Assets/akar-icons_facebook-fill.png" alt="">
+        <img class="twitter"src="/Assets/akar-icons_twitter-fill.png" alt="">
+    </div>
+
+</body>
+</html>
